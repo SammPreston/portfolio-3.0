@@ -1,0 +1,35 @@
+/* - - Screen on animation - -*/
+.screenOn {
+    animation-name: screenOn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+/* . . Screen going from black to --windows200 blue . .*/
+@keyframes screenOn {
+    0% {  background-color: black; }
+    5% { background: radial-gradient(circle, rgba(22,21,21,1) 0%, rgba(19,18,18,1) 14%, rgba(0,0,0,1) 100%); }
+    10% { background: radial-gradient(circle, rgba(55,104,157,1) 0%, rgba(0,0,0,1) 1%); }
+    20% { background: radial-gradient(circle, rgba(55,104,157,1) 0%, rgba(47,86,128,1) 8%, rgba(30,50,73,1) 20%, rgba(22,38,55,1) 26%, rgba(10,17,24,1) 37%, rgba(0,0,0,1) 68%, rgba(0,0,0,1) 100%); }
+    30% { background: radial-gradient(circle, rgba(55,104,157,1) 4%, rgba(47,86,128,1) 13%, rgba(30,50,73,1) 23%, rgba(22,38,55,1) 30%, rgba(10,17,24,1) 53%, rgba(0,0,0,1) 77%, rgba(0,0,0,1) 100%); }
+    40%{ background: radial-gradient(circle, rgba(55,104,157,1) 7%, rgba(47,86,128,1) 19%, rgba(30,50,73,1) 31%, rgba(22,38,55,1) 40%, rgba(10,17,24,1) 60%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%); }
+    50%{ background: radial-gradient(circle, rgba(55,104,157,1) 9%, rgba(47,86,128,1) 26%, rgba(30,50,73,1) 43%, rgba(22,38,55,1) 49%, rgba(10,17,24,1) 61%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%); }
+    60% { background: radial-gradient(circle, rgba(55,104,157,1) 12%, rgba(47,86,128,1) 34%, rgba(30,50,73,1) 46%, rgba(22,38,55,1) 57%, rgba(10,17,24,1) 61%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%); }
+    70% { background: radial-gradient(circle, rgba(55,104,157,1) 0%, rgba(47,86,128,1) 38%, rgba(47,79,116,1) 47%, rgba(39,68,98,1) 61%); }
+    80%{ background: radial-gradient(circle, rgba(55,104,157,1) 0%, rgba(39,68,98,1) 61%); }
+    90% { background: radial-gradient(circle, rgba(55,104,157,1) 0%, rgba(46,86,130,1) 61%); }
+    100% { background-color: var(--windows2000); }
+} 
+
+/* . . Retro screen elements fade in . . */
+.displayOn-Animation {
+    animation-name: displayOn;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayOn {
+    0% { opacity: 0%; }
+    40% { opacity: 50%; }
+    100% { opacity: 100%; }
+}

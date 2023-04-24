@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Page styles -->
+    <!-- Static Webpage styles -->
+    <link rel="stylesheet" href="/public/css/mainPage.css">
+    <!-- Retro Screen Animations -->
+    <link rel="stylesheet" href="/public/css/animations.css">
+    <!-- Element styles on display-toggle.js -->
+    <link rel="stylesheet" href="/public/css/retroScreen-On.css">
+    <!-- Element styles for pageSelection files -->
+    <link rel="stylesheet" href="/public/css/fileViewer.css">
+
+    <!-- Game Styles -->
+    <!-- <link rel="stylesheet" href="/public/projects/basic-SnakeGame/snake.css"> -->
+    
+    <!-- Google font libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chakra+Petch&family=Nunito&family=Orbitron&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+
+    <title>Sammantha Preston</title>
+</head>
+<body><!--Dynamic shinning stars moves when page scrolls-->
+    <a href="#button"  id="main-content-button">Main Content</a>
+   
+    <header><!--I want this card to have interactive clouds that get 'waved away' when user moves the mouse-->
+        <div id="titleCard"> <!--Light opacity so when the clouds are moved the stars appear behind my image-->
+            
+            <figure id="profile-ImageContainer">
+                <image src="/public/img/proPic.jpg" id="profileImage" alt="Picture of Sammantha Preston"/>
+            </figure>   
+
+            <div id="protext">
+                <h1>Sammantha Preston</h1> 
+            </div>
+            
+        </div>
+    </header>
+    <div id="jobTitle"><h2 >Front-End Web Developer</h2></div>
+    
+
+    <main>
+        <div id="aboutContainer">
+            
+            <h3>"Head in the clouds,  eyes on the stars."</h3>
+            <p>
+                Lorem ipsum dolor sit amet. In maiores aspernatur sed numquam repellat et quod consequatur id asperiores expedita. Ut culpa amet non facilis galisum eum voluptatem autem cum perspiciatis velit.
+            </p>
+        
+        </div>
+        
+        <div id="retroMonitor" >
+            <div id="screenDisplay"></div>  
+            <div id="Monitor-Control-Panel">
+                <button id="button" class="material-symbols-outlined" style="float: right;"> power_rounded </button>
+                <script type="module" src="/public/js/screenComponents/display-toggle.js"></script>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

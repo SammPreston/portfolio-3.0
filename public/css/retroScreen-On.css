@@ -1,0 +1,68 @@
+/* 
+- - Styles for elements one display-toggle.js event has been toggled - - 
+. . screenDisplay is in the `mainPage.css` file because the screen is displayed as black until the animation is launched . . 
+. . #displayWindow and .nav are overlayed onto screenDisplay so my program wipes only the displayWindow and not the nav . .
+*/ 
+
+/* - - Content Viewer - -*/
+#displayWindow {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--windows2000);
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+/* - - Content Selection - - */
+.nav {
+    background-color: var(--nav);
+    border-top: .5vh solid #bda48a;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    margin-right: auto;
+    margin-left: .5%;
+    padding: .5vw  1.5vw;
+    
+    background-color: #baac8d;
+    border: .5vh outset #b29e73;
+    border-radius: 0;
+
+}
+
+.change2 {
+    background-color:#5e4923;
+    border: .5vh inset #9f9580;
+}
+#appTray {
+    margin: 0;
+    background-color: var(--nav);
+
+    position: absolute;
+    bottom: 5vh;
+    left: -1px;
+    
+    z-index: 1; 
+}
+
+#appTray > p {
+    padding: .5vh 4vh;
+    text-align: left;
+}
+  
+#appTray{
+    height: 40vh;
+    width: 20vw;
+    display: block;
+
+    border-top: .5vh solid #c1a78c;
+    border-right: .5vh solid #c1a78c;
+
+    z-index: 1;
+  } 
+
