@@ -9,7 +9,7 @@ let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
 // - ! added export. IDK, how to export this game to my play game button but I know I am only exporting this file ! -
-export function main(currentTime) {
+function main(currentTime) {
     if (gameOver){
         if (confirm('You lost. Press ok to restart.')) {
             window.location = '/'

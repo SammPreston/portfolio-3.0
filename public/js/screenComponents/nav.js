@@ -1,7 +1,7 @@
 // - - Added from display-window.js
 import { resumeViewer } from "../pageSelection/resume.js";
 import { projectViewer } from "../pageSelection/projects.js";
-import { gamesViewer } from "../pageSelection/games.js";
+import { gamesViewer } from "../pageSelection/games/games.js";
 import { contactViewer } from "../pageSelection/contact.js";
 import { referenceViewer } from "../pageSelection/references.js";
 
@@ -9,8 +9,6 @@ const screenDisplay = document.getElementById('screenDisplay');
 const displayWindow = document.createElement('div');
 displayWindow.id = 'displayWindow'; // - - id located in retroScreen-on.css
 displayWindow.classList = 'screen-on';
-
-
 
 
 // -- Dynamic application tray that appeard when 'start' button is clicked - -
